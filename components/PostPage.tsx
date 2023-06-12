@@ -1,5 +1,6 @@
 import Container from 'components/BlogContainer'
 import BlogHeader from 'components/BlogHeader'
+import BlogBanner from 'components/BlogBanner'
 import Layout from 'components/BlogLayout'
 import MoreStories from 'components/MoreStories'
 import PostBody from 'components/PostBody'
@@ -11,6 +12,8 @@ import * as demo from 'lib/demo.data'
 import type { Post, Settings } from 'lib/sanity.queries'
 import { notFound } from 'next/navigation'
 
+
+/* When you click on a post you will be brought here */
 export interface PostPageProps {
   preview?: boolean
   loading?: boolean
@@ -23,7 +26,6 @@ const NO_POSTS: Post[] = []
 
 export default function PostPage(props: PostPageProps) {
   const { preview, loading, morePosts = NO_POSTS, post, settings } = props
-  const { title = demo.title } = settings || {}
 
   const slug = post?.slug
 
@@ -37,7 +39,7 @@ export default function PostPage(props: PostPageProps) {
 
       <Layout preview={preview} loading={loading}>
         <Container>
-          <BlogHeader title={title} level={2} />
+          <BlogHeader />
           {preview && !post ? (
             <PostTitle>Loading…</PostTitle>
           ) : (

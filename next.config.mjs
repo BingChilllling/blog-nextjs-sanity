@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const config = {
   images: {
+    domains: ['links.papareact.com'],
     remotePatterns: [
       { hostname: 'cdn.sanity.io' },
       { hostname: 'source.unsplash.com' },
