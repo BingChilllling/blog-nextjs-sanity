@@ -18,6 +18,8 @@ export default function IndexPageHead({ settings }: IndexPageHeadProps) {
 
   return (
     <Head>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6469406013541860"
+      crossOrigin="anonymous"></script>
       <title>{title}</title>
       <BlogMeta />
       <meta
