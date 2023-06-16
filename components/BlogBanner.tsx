@@ -6,8 +6,8 @@ function BlogBanner() {
             <div>
                 <img
                     src="/cropped-logo-currencyforte.png"
-                    width={30}
-                    height={30}
+                    width={40}
+                    height={40}
                     alt="logo"
                 />
                 <h2 className="mt-5 md:mt-5">
