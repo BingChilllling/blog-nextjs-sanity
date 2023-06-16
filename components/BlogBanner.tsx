@@ -11,8 +11,7 @@ function BlogBanner() {
                     alt="logo"
                 />
                 <h2 className="mt-5 md:mt-5">
-                    Welcome to{" "}
-                    <span className="underline decoration-4 decoration-[#F7AB0A]">
+                    <span className="underline decoration-4 decoration-[#0e0af7de]">
                         Every Investor's
                     </span>{" "}
                     favorite blog on the Internet
