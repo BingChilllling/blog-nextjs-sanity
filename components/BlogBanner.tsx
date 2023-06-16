@@ -5,7 +5,7 @@ function BlogBanner() {
         justify-between font-bold px-10 py-5 mb-10">
             <div>
                 <img
-                    src="/Currencyforte-logo.png"
+                    src="/cropped-logo-currencyforte.png"
                     width={250}
                     height={250}
                     alt="logo"
