@@ -7,7 +7,7 @@ function BlogHeader() {
         space-x-2 font-bold px-10 py-5">
             <Link href="/">
                 <img
-                    src="/Currencyforte-logo.png"
+                    src="/cropped-logo-currencyforte.png"
                     width={250}
                     height={250}
                     alt="logo"
