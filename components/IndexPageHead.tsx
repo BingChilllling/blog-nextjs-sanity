@@ -3,6 +3,7 @@ import BlogMeta from 'components/BlogMeta'
 import * as demo from 'lib/demo.data'
 import { Settings } from 'lib/sanity.queries'
 import Head from 'next/head'
+import Script from 'next/dist/client/script';
 
 export interface IndexPageHeadProps {
   settings: Settings
@@ -18,8 +19,15 @@ export default function IndexPageHead({ settings }: IndexPageHeadProps) {
 
   return (
     <Head>
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6469406013541860"
-      crossOrigin="anonymous"></script>
+      <Script 
+        id="Adsense-id" 
+        data-ad-client="ca-pub-6469406013541860"
+        async
+        strategy="afterInteractive"
+        onError={ (e) => {console.error('Script failed to load', e)}}
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+      >
+      </Script>
       <title>{title}</title>
       <BlogMeta />
       <meta
